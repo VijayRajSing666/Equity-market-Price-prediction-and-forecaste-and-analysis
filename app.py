@@ -57,15 +57,15 @@ with st.sidebar:
     st.markdown("# Equity Analysis & Forecasting")
     user_input = st.selectbox(
     'Please select the Equity for forecasting and technical analysis ',
-    ('TATASTEEL.NS','ADANIENT.NS','RELIANCE.NS','INFY.NS'))
-    # user_input = st.text_input('Enter Stock Name', "ADANIENT.NS")
+    ('RELIANCE.NS','TATASTEEL.NS','ADANIENT.NS','INFY.NS'))
+    # user_input = st.text_input('Enter Stock Name', "RELIANCE.NS")
     st.markdown("### Choose Date for your anaylsis")
     date_from = st.date_input("From",datetime.date(2015, 1, 1))
     date_to = st.date_input("To",datetime.date(2023, 1, 1))
     options = st.multiselect(
         'Select equity for diversification analysis(select minimum Stocks/Equity)',
-        ['TATASTEEL.NS','ADANIENT.NS','RELIANCE.NS','INFY.NS'],
-        ['TATASTEEL.NS']
+        ['RELIANCE.NS','ADANIENT.NS','RELIANCE.NS','INFY.NS'],
+        ['RELIANCE.NS']
     )
     # st.write('You selected:', options[0])
     btn = st.button('Submit') 
