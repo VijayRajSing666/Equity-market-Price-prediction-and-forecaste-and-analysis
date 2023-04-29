@@ -64,7 +64,7 @@ with st.sidebar:
     date_to = st.date_input("To",datetime.date(2023, 1, 1))
     options = st.multiselect(
         'Select equity for diversification analysis(select minimum Stocks/Equity)',
-        ['RELIANCE.NS','ADANIENT.NS','RELIANCE.NS','INFY.NS'],
+        ['RELIANCE.NS','TATASTEEL.NS','ADANIENT.NS','INFY.NS'],
         ['RELIANCE.NS']
     )
     # st.write('You selected:', options[0])
