@@ -54,7 +54,7 @@ def create_model(df):
     model.add(Dense(1))
     optimizer = tf.keras.optimizers.Adam()
     model.compile(loss='mean_squared_error',optimizer=optimizer)
-    model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=10,batch_size=5,verbose=1)
+    model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=50,batch_size=10,verbose=1)
 
 
     # model.save('lstm_model.h5')
